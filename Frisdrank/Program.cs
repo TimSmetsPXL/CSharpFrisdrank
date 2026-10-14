@@ -6,7 +6,9 @@
             
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Ingeworpen bedrag is € 2");
+            Console.ResetColor();
             Console.Write("Prijs van de gekozen frisdrank: € ");
             string prijsInput = Console.ReadLine();
             decimal.TryParse(prijsInput, out decimal prijs);
